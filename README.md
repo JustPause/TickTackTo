@@ -14,9 +14,8 @@ The idea is to make multipall simpe prijecs in 4 langviges
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/w/JustPause/TickTackTo)
 
 **C/C++**
-
-Now working on it
 ---------
+Now working on it
 
 **Java**
 --------
