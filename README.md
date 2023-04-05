@@ -1,4 +1,5 @@
 # What is TickTackTo?
+
 ---------------------
 
 The idea is to make multipall simpe prijecs in 4 langviges
@@ -12,10 +13,7 @@ The idea is to make multipall simpe prijecs in 4 langviges
 * **JavaScript/CSS/Html**
 * **Rust**
 
-
-
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/w/JustPause/TickTackTo)
-
 
 **C/C++**
 ---------
@@ -34,6 +32,7 @@ No Code
 No Code
 
 --------
+
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/JustPause/TickTackTo)
 
 ![Lines of code](https://img.shields.io/tokei/lines/github/JustPause/TickTackTo)
