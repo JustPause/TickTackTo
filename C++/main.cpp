@@ -1,5 +1,6 @@
 #include <iostream>
 #include <sstream>
+#include <stdlib.h>
 
 float kaszaidiza = 0;
 char p1 = 'O';
@@ -8,6 +9,46 @@ char p2 = 'X';
 char Canvas[3][3] = {{'+', '+', '+'},
                      {'+', '+', '+'},
                      {'+', '+', '+'}};
+
+int e(char A, char B, char C)
+{
+    if (A == B == C)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+}
+
+void patikrinimas(char Z)
+{
+    char winner = ' ';
+    for (int i = 1; i < 3; i++)
+    {
+        if (e(Canvas[1][i], Canvas[2][i], Canvas[3][i]) == true)
+        {
+            std::cout << "Done. " << Z << " Has won";
+            winner = Z;
+        }
+        if (Canvas[1][i] == Canvas[2][i] == Canvas[3][i] == Z)
+        {
+            std::cout << "Done. " << Z << " Has won";
+            winner = Z;
+        }
+        if (Canvas[1][1] == Canvas[2][2] == Canvas[3][3] == Z)
+        {
+            std::cout << "Done. " << Z << " Has won";
+            winner = Z;
+        }
+        if (Canvas[3][1] == Canvas[2][2] == Canvas[1][3] == Z)
+        {
+            std::cout << "Done. " << Z << " Has won";
+            winner = Z;
+        }
+    }
+}
 
 int input(int &X, int &Y)
 {
@@ -42,14 +83,18 @@ void draw(char Zenklas)
         }
         std::cout << std::endl;
     }
-    while (!input(X, Y));
 
-    Canvas[X-1][Y-1] = Zenklas;
-    if(kaszaidiza == 0){
+    while (!input(X, Y))
+        ;
+
+    Canvas[X - 1][Y - 1] = Zenklas;
+    if (kaszaidiza == 0)
+    {
         kaszaidiza = 1;
     }
 
-    else{
+    else
+    {
         kaszaidiza = 0;
     }
 }
@@ -91,8 +136,10 @@ void play(int X, int Y)
 
 int main()
 {
-    while (!klausimas()){
-        if(BigQ == true){
+    while (!klausimas())
+    {
+        if (BigQ == true)
+        {
             return 0;
         }
     }
@@ -107,6 +154,7 @@ int main()
         {
             draw(p2);
         }
+        patikrinimas(kaszaidiza);
     }
 
     return 0;
