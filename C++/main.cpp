@@ -6,6 +6,8 @@ float kaszaidiza = 0;
 char p1 = 'O';
 char p2 = 'X';
 
+float BigQ = false;
+
 char Canvas[3][3] = {{'+', '+', '+'},
                      {'+', '+', '+'},
                      {'+', '+', '+'}};
@@ -31,21 +33,25 @@ void patikrinimas(char Z)
         {
             std::cout << "Done. " << Z << " Has won";
             winner = Z;
+            BigQ = true;
         }
         if (Canvas[1][i] == Canvas[2][i] == Canvas[3][i] == Z)
         {
             std::cout << "Done. " << Z << " Has won";
             winner = Z;
+            BigQ = true;
         }
         if (Canvas[1][1] == Canvas[2][2] == Canvas[3][3] == Z)
         {
             std::cout << "Done. " << Z << " Has won";
             winner = Z;
+            BigQ = true;
         }
         if (Canvas[3][1] == Canvas[2][2] == Canvas[1][3] == Z)
         {
             std::cout << "Done. " << Z << " Has won";
             winner = Z;
+            BigQ = true;
         }
     }
 }
@@ -53,10 +59,15 @@ void patikrinimas(char Z)
 int input(int &X, int &Y)
 {
     bool pass = false;
-    std::cout << "Parasykite kur noretumetia dedi zenkla" << std::endl
-              << "[X] \t[Y] " << std::endl;
-    std::cin >> X >> Y;
-    std::stringstream() >> X >> Y;
+    X = char(X);
+    Y = char(Y);
+
+std::string A = "Parasykite kur noretumetia dedi zenkla\n [X] \t[Y] ";
+ std::string Z;
+    std::stringstream A(Z);
+
+    X = int(X);
+    Y = int(Y);
 
     if (X < 1 || X > 3 && Y < 1 || Y > 3)
     {
@@ -99,7 +110,6 @@ void draw(char Zenklas)
     }
 }
 
-float BigQ = false;
 
 float klausimas()
 {
@@ -128,10 +138,6 @@ float klausimas()
         std::cout << "Prasome pakartotinai ivesti atsakyma" << std::endl;
         return false;
     }
-}
-
-void play(int X, int Y)
-{
 }
 
 int main()
