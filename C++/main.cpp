@@ -149,7 +149,7 @@ int main()
             return 0;
         }
     }
-
+    //a comnet 
     while (BigQ == false)
     {
         if (kaszaidiza)
