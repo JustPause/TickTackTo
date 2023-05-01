@@ -12,7 +12,7 @@ char Canvas[3][3] = {{'+', '+', '+'},
                      {'+', '+', '+'},
                      {'+', '+', '+'}};
 
-int e(char A, char B, char C)
+int ChackForWiner(char A, char B, char C)
 {
     if (A == B == C)
     {
