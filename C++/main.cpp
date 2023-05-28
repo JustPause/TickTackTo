@@ -29,7 +29,7 @@ void patikrinimas(char Z)
     char winner = ' ';
     for (int i = 1; i < 3; i++)
     {
-        if (e(Canvas[1][i], Canvas[2][i], Canvas[3][i]) == true)
+        if ((Canvas[1][i], Canvas[2][i], Canvas[3][i]) == true)
         {
             std::cout << "Done. " << Z << " Has won";
             winner = Z;
@@ -62,9 +62,8 @@ int input(int &X, int &Y)
     X = char(X);
     Y = char(Y);
 
-std::string A = "Parasykite kur noretumetia dedi zenkla\n [X] \t[Y] ";
- std::string Z;
-    std::stringstream A(Z);
+    std::string A = "Parasykite kur noretumetia dedi zenkla\n [X] \t[Y] ";
+    std::string Z;
 
     X = int(X);
     Y = int(Y);
@@ -110,7 +109,6 @@ void draw(char Zenklas)
     }
 }
 
-
 float klausimas()
 {
     std::cout << "Pasiruosias žaisti?" << std::endl
@@ -149,7 +147,7 @@ int main()
             return 0;
         }
     }
-    //a comnet 
+    // a comnet
     while (BigQ == false)
     {
         if (kaszaidiza)
