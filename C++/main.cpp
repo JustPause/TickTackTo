@@ -1,6 +1,5 @@
 #include <iostream>
-#include <sstream>
-#include <stdlib.h>
+#include "connection.h"
 
 float kaszaidiza = 0;
 char p1 = 'O';
@@ -140,14 +139,11 @@ float klausimas()
 
 int main()
 {
-    while (!klausimas())
-    {
-        if (BigQ == true)
-        {
-            return 0;
-        }
-    }
-    // a comnet
+
+    std::cout << "Greetings and welcome to TickTalkTo. This game is made for two players on the same keybord. Therefore, \nI hope you have a friend for that. The game  reqwaers player 1 to select one-character long character first, \nfollowed by player 2's one-character long symbol. Furthermore, player 1 enters the coordinates of x and y. \nSimilar results for player 2." << std::endl;
+
+    getCharForUeser();
+
     while (BigQ == false)
     {
         if (kaszaidiza)
