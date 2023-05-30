@@ -1,12 +1,7 @@
 #pragma once
 
-class UserInput
-{
-private:
-    char playerChar[2];
-public:
-    void setPlayerChar(int, char);
-    char getPlayerChar(int);
-};
+extern char playerChar[2];
+extern int UserInputX, UserInputY;
 
 void getCharForUeser();
+void getXYPosition(int index);

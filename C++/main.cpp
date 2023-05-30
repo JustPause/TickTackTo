@@ -1,4 +1,5 @@
 #include <iostream>
+#include "WinnerFinder.h"
 #include "UserInput.h"
 #include "Drow.h"
 
@@ -76,8 +77,7 @@
 //     {
 //         pass = true;
 //     }
-//     return pass;
-// }
+//     return pass;/* code */
 
 // void draw(char Zenklas)
 // {
@@ -167,11 +167,25 @@ int main()
 
     int NextPlayer = 0;
 
+    int NowPlayingInt;
+
     do
     {
-        NextPlayer = NowPlaying(NextPlayer);
+        NowPlayingInt = NextPlayer;
+        NowPlayingText(NowPlayingInt);
         ShowCanvas();
-    } while (false);
+        getXYPosition(NowPlayingInt);
+        NowPlayingInt = NextPlayer;
+        if (CheckIfTheSpaceIsUsed() == false)
+        {
+            NextPlayer = NowPlaying(NextPlayer);
+            InsertXYToCanvas(NowPlayingInt);
+        }
+        else
+        {
+            std::cout << "Space Is Used: Player " << NowPlayingInt + 1 << " try again." << std::endl;
+        }
+    } while (!CheckIfWeHaveAWinner());
 
     return 0;
 }
