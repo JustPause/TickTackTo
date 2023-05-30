@@ -6,6 +6,7 @@
 bool Tie();
 bool Horizontal();
 bool Vertical();
+bool Diagonal();
 
 bool CheckIfTheSpaceIsUsed()
 {
@@ -19,7 +20,7 @@ bool CheckIfTheSpaceIsUsed()
     }
 }
 
-bool CheckIfWeHaveAWinner()
+bool CheckIfWeHaveAWinner(int index)
 {
     if (Tie())
     {
@@ -31,15 +32,22 @@ bool CheckIfWeHaveAWinner()
     else if (Horizontal())
     {
         ShowCanvas();
-        std::cout << "The game has finish, and winner is Player " << std::endl;
+        std::cout << "The game has finish, and winner is Player " << index + 1 << std::endl;
         return Horizontal();
     }
 
     else if (Vertical())
     {
         ShowCanvas();
-        std::cout << "The game has finish, and winner is Player " << std::endl;
+        std::cout << "The game has finish, and winner is Player " << index + 1 << std::endl;
         return Vertical();
+    }
+
+    else if (Diagonal())
+    {
+        ShowCanvas();
+        std::cout << "The game has finish, and winner is Player " << index + 1 << std::endl;
+        return Diagonal();
     }
 
     return false;
@@ -94,7 +102,7 @@ bool Vertical()
 
 bool Diagonal()
 {
-    if (Canvas[0][0] == Canvas[1][1] && Canvas[1][1] == Canvas[2][2] && Canvas[2][0] == Canvas[1][1] && Canvas[1][1] == Canvas[0][2])
+    if (Canvas[0][0] == Canvas[1][1] && Canvas[1][1] == Canvas[2][2] && Canvas[1][1] != '+' || Canvas[2][0] == Canvas[1][1] && Canvas[1][1] == Canvas[0][2] && Canvas[1][1] != '+')
     {
         return true;
     }

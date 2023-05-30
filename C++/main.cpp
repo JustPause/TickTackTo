@@ -185,7 +185,7 @@ int main()
         {
             std::cout << "Space Is Used: Player " << NowPlayingInt + 1 << " try again." << std::endl;
         }
-    } while (!CheckIfWeHaveAWinner());
+    } while (!CheckIfWeHaveAWinner(NowPlayingInt));
 
     return 0;
 }

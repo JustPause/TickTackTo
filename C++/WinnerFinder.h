@@ -1,4 +1,4 @@
 #pragma once
 
 bool CheckIfTheSpaceIsUsed();
-bool CheckIfWeHaveAWinner();
+bool CheckIfWeHaveAWinner(int index);
