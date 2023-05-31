@@ -1,0 +1,22 @@
+[
+{
+  "directory": "/home/justinas/Programming/C++/TickTackTo/TickTackTo/C++/build",
+  "command": "/usr/bin/g++ -g -o CMakeFiles/TickTackTo.dir/main.cpp.o -c /home/justinas/Programming/C++/TickTackTo/TickTackTo/C++/main.cpp",
+  "file": "/home/justinas/Programming/C++/TickTackTo/TickTackTo/C++/main.cpp"
+},
+{
+  "directory": "/home/justinas/Programming/C++/TickTackTo/TickTackTo/C++/build",
+  "command": "/usr/bin/g++ -g -o CMakeFiles/TickTackTo.dir/UserInput.cpp.o -c /home/justinas/Programming/C++/TickTackTo/TickTackTo/C++/UserInput.cpp",
+  "file": "/home/justinas/Programming/C++/TickTackTo/TickTackTo/C++/UserInput.cpp"
+},
+{
+  "directory": "/home/justinas/Programming/C++/TickTackTo/TickTackTo/C++/build",
+  "command": "/usr/bin/g++ -g -o CMakeFiles/TickTackTo.dir/Drow.cpp.o -c /home/justinas/Programming/C++/TickTackTo/TickTackTo/C++/Drow.cpp",
+  "file": "/home/justinas/Programming/C++/TickTackTo/TickTackTo/C++/Drow.cpp"
+},
+{
+  "directory": "/home/justinas/Programming/C++/TickTackTo/TickTackTo/C++/build",
+  "command": "/usr/bin/g++ -g -o CMakeFiles/TickTackTo.dir/WinnerFinder.cpp.o -c /home/justinas/Programming/C++/TickTackTo/TickTackTo/C++/WinnerFinder.cpp",
+  "file": "/home/justinas/Programming/C++/TickTackTo/TickTackTo/C++/WinnerFinder.cpp"
+}
+]

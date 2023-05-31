@@ -1,0 +1,6 @@
+# ninja log v5
+1	279	1685576084355778544	CMakeFiles/TickTackTo.dir/main.cpp.o	8d459eef09078fe9
+2	287	1685576173843776687	CMakeFiles/TickTackTo.dir/WinnerFinder.cpp.o	fd11a630fe9b4054
+1	293	1685576173851776687	CMakeFiles/TickTackTo.dir/UserInput.cpp.o	95789811615c87b4
+1	324	1685576173879776686	CMakeFiles/TickTackTo.dir/Drow.cpp.o	e6fce6a6903cd35d
+324	386	1685576173939776685	TickTackTo	238a8587fb246627
